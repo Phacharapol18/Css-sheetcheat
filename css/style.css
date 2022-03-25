@@ -1,0 +1,109 @@
+
+/*element selector*/
+body {
+    background-color: black;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1 {
+  font-size: 8rem;
+  background: linear-gradient(90deg, #ff8a00 0%, #dd4c4f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+section {
+    border: 3px dashed #fff ;
+    width: 25%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.8s ease;
+}
+
+pre {
+    background: linear-gradient(90deg, #ff8a00 0%, #dd4c4f 100%) ;
+    margin: 1%;
+    border-radius: 20px;
+    padding: 15px;
+    user-select: all;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    
+}
+div {
+    transition: box-shadow 0.8s ease;
+}
+.first, .second, .third, .forth, .fifth, .sixth {
+    background: #000;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 5px;
+    position: relative;
+    top: -20px;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    
+  
+}
+div > h2 {
+    font-size: 1.5rem;
+    background: linear-gradient(90deg, #ff8a00 0%, #dd4c4f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+section > p {
+    margin: 7px 3px 5px;
+    background: linear-gradient(90deg, #ff8a00 0%, #dd4c4f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+section:hover, div:hover{
+    border-color: #ff8a00;
+    cursor: pointer;
+    box-shadow: 15px 15px 50px 15px #ff8a00;
+    transition: box-shadow 0.8s ease;
+}
+pre::selection {
+    background-color: aqua;
+    color: coral;
+}
+
+
+
+/*class selector*/
+.promote {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media (max-width:1480px) {
+   section{
+       width: 40%;
+   }
+   main {
+       justify-content: center;
+   }
+}
+ @media (max-width: 990px) {
+     h1 {
+         font-size: 5rem;
+     }
+     main{
+         flex-direction: column;
+         flex-grow: 1;
+     }
+     section {
+         width: 95%;
+     }
+ }

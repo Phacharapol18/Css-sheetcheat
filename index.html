@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Css Cheatsheet</h1>
+        <h2 class="promote">Ever have trouble calling the exact syntax for your CSS code? 
+            Giv it a permanent home and it to this page! Select any snippet 
+            below and it'll automatically select all of thye code for you to copy.
+        </h2>
+    </header>
+    <main>
+        <section>
+           <div class="first">
+            <h2>Center horizontally with Flexbox</h2>
+           </div> 
+             <p>With the modern flexbox property centering horizontally is dead simple. 
+                 Replace your current .center-horizontal class with this</p>
+    
+               <pre>
+               <p class ="code">.center-horizontal {
+                display: flex;
+                justify-content: center;
+              }</p>
+               </pre>
+         
+        </section>
+        <section>
+            <div class="second">
+             <h2>Center vertically with flexbox</h2>
+            </div> 
+              <p>To center elements vertically with flexbox, we need a parent flex container. 
+                  You can remove the center-vertical class from your child element from the previous example. 
+                  Now add these two flexbox properties to your .section class, like this:</p>
+                <pre>
+                <p class ="code">.section {
+                height: 200px;
+                border: 1px solid black;
+                display: flex;
+                align-items: center;
+                }</p>
+                </pre>
+            
+         </section>
+         <section>
+            <div class="third">
+             <h2>Gradient text color</h2>
+            </div> 
+              <p>To add a gradient text color to your HTML text elements, 
+                  you’ll need the following CSS properties:
+                background,
+                -webkit-background-clip,
+                -webkit-text-fill-color</p>
+            
+                <pre>
+                <p class ="code">.text-gradient {
+            background: linear-gradient<br>(to right, #ff8a00 0%, #dd4c4f 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            }</p>
+                </pre>
+           
+         </section>
+         <section>
+            <div class="forth">
+             <h2>Center align horizontally</h2>
+            </div> 
+              <p>You can also center align by using the modern flexbox property. 
+                  Due to the way flexbox passes down properties to child elements, 
+                  the simplest way to center align your layout is to wrap your 
+                  element in another element, and then add the flexbox properties to 
+                  that new parent element.</p>
+            <pre>
+                <p class ="code">main {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                }
+                article {
+                    max-width: 640px;
+                }</p>
+            </pre> 
+         </section>
+         <section>
+            <div class="fifth">
+             <h2>Square Bullets with CSS</h2>
+            </div> 
+              <p>To make your bullet points square, you can override the 
+                  default list-style-type settings like this:</p>
+            <pre>
+                <p class ="code">ul {
+    list-style-type: square;
+    }</p>
+            </pre> 
+         </section>
+         <section>
+            <div class="sixth">
+             <h2>CSS font-style Property</h2>
+            </div> 
+              <p>The CSS font-style property allows you to apply 
+                  three different font types (styles) for your text, 
+                  normal, italic, and oblique:</p>
+            <pre>
+                <p class ="code">.normal{
+             font-style: normal;
+                  }
+            .italic {
+              font-style: italic;
+            }
+            .oblique {
+             font-style: oblique;
+            }</p>
+            </pre> 
+         </section>
+    </main>
+</body>
+</html>
