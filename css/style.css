@@ -26,6 +26,7 @@ section {
     display: flex;
     flex-direction: column;
     transition: box-shadow 0.8s ease;
+    border-radius: 15px;
 }
 
 pre {
